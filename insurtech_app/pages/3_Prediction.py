@@ -46,7 +46,7 @@ left, right = st.columns([1, 2], gap="large")
 with left:
     st.subheader("Vos informations")
 
-    age      = st.slider("Age (ans)", 18, 64, 35,
+    age      = st.slider("Age (ans)", 18, 120, 35,
                           help="Votre age en annees")
     sex      = st.selectbox("Sexe", ["male","female"],
                              format_func=lambda x: "Homme" if x=="male" else "Femme")
@@ -63,8 +63,8 @@ with left:
 
     # Validation des entrees
     errors = []
-    if not (18 <= age <= 64):
-        errors.append("L'age doit etre entre 18 et 64 ans.")
+    if not (18 <= age <= 100):
+        errors.append("L'age doit etre entre 18 et 100 ans.")
     if not (10.0 <= bmi <= 60.0):
         errors.append("L'IMC doit etre entre 10 et 60.")
     if errors:

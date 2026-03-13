@@ -1,0 +1,9 @@
+h1, h2, h3 { color: #1a1a2e; }
+.block-container { padding-top: 1.5rem; }
+.metric-card {
+    background: #f0f4ff;
+    border-left: 4px solid #2563eb;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
